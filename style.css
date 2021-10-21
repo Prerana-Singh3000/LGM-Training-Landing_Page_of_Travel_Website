@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box
+}
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+h1{
+    position: relative;
+    color: whitesmoke;
+    font-size: 5vw;
+    font-family: 'Patua One', cursive;
+}
+.mySlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+    margin-left: 5%;
+    width: 90%;
+    height: 70%;
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+}
+/* Next & previous buttons */ */
+/* .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} */
+/* Position the "next button" to the right */
+/* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}  */
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+} */
+
+ /* Caption text */
+h3{
+    font-size: 2vw;
+    padding: 8px 12px;
+    position: absolute;
+    /* bottom: 18px;
+    width: 100%; */
+    text-align: center;
+}
+/* Welcome text in different languages */
+.welcome-text {
+    color: #ffffff;
+    font-size: 2vw;
+    padding: 8px 12px;
+    position: absolute;
+    top: 14%;
+    left: 8%;
+}
+/* Card */
+.card{
+    background-color: rgba(255, 255, 255, 0.767);
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+}
+.card img{
+    position: relative;
+    width: 90%;
+    height: 40%;
+}
+.card button{
+    background-color: rgba(166, 34, 255, 0.911);
+}
+.card button a{
+    color: white;
+    text-decoration: none;
+}
+.card-title{
+    font-size: 1.3vw;
+}
+.card-text{
+    font-size: 1vw;
+}
+.list-group-item{
+    font-size: 1vw;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+    background-color: #111111;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+@-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .card{
+        top: 104%;
+        left: 6%;
+        width: 90%;
+    }
+    .card-title{
+        font-size: 3vw;
+    }
+    .card-text{
+        font-size: 2vw;
+    }
+    .list-group-item{
+        font-size: 2vw;
+    }
+  }
+ 
